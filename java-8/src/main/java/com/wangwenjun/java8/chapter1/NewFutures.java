@@ -1,7 +1,5 @@
 package com.wangwenjun.java8.chapter1;
 
-import sun.rmi.runtime.NewThreadAction;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.BiFunction;
@@ -30,12 +28,11 @@ public class NewFutures {
 
     }
 
-    private void testPredicate()
-    {
-        Predicate<Object> p= this::isValid;
+    private void testPredicate() {
+        Predicate<Object> p = this::isValid;
     }
 
-    private boolean isValid(Object obj){
+    private boolean isValid(Object obj) {
         return true;
     }
 }
